@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="OnlineCoursesPlatform.Views.CustomFields.ShowTestScoreField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+             xmlns:local="clr-namespace:OnlineCoursesPlatform.Views.CustomFields"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="620" d:Background="white">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding ScoreNumber}" HorizontalAlignment="Center" d:Text="82" Margin="0,0,0,80" FontSize="600" Foreground="#4A0024" Opacity="0.04" VerticalAlignment="Center" Panel.ZIndex="-1" Grid.RowSpan="5"/>
+
+        <TextBlock Foreground="#22234A" Opacity="0.6" Grid.Row="0" Margin="30, 20, 0, 0" FontSize="14">
+            <Run Text="{Binding AngleLeft}"/>
+            <Run Text="{Binding CourseName}" TextDecorations="Underline" d:Text="Artificial Intelligence"/>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="PreviewMouseDown">
+                    <i:InvokeCommandAction Command="{Binding Navigate}" CommandParameter="SelCourse" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </TextBlock>
+        
+        
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Final Test" FontWeight="Medium" Foreground="#22234A" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBlock Text="{Binding Name}" d:Text="'Operation System'" FontWeight="Light" Foreground="#22234A" HorizontalAlignment="Center" FontSize="18"/>
+        </StackPanel>
+
+        <Border Background="#4A0024" Width="140" Height="140" CornerRadius="70" Grid.Row="2">
+            <Border Background="White" Width="120" Height="120" CornerRadius="60">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Total score:" Foreground="#4A0024" Opacity="0.22" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBlock Text="{Binding ScoreText}" d:Text="82%" Foreground="#4A0024" FontWeight="Medium" FontSize="32" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+        </Border>
+
+        <Grid Grid.Row="3" Height="50"  Width="620" VerticalAlignment="Top">
+            <Border Background="#4A0024" Opacity="0.02" Height="50"  Width="620" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="'You're doing a great job! Keep up the good work!'" FontSize="18" Foreground="#A1788C"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+        
+
+        <Button Command="{Binding Navigate}" FontSize="14" CommandParameter="AllCourses" Background="Transparent" Foreground="#2F0014" BorderBrush="#2F0014" BorderThickness="1" Content="To all courses" Grid.Row="4" Width="110" Height="30">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="12"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+       
+
+    </Grid>
+</UserControl>

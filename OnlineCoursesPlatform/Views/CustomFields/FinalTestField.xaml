@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="OnlineCoursesPlatform.Views.CustomFields.FinalTestField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OnlineCoursesPlatform.Views.CustomFields"
+             mc:Ignorable="d" d:Background="White"
+             d:DesignHeight="600" d:DesignWidth="620">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Styles\MainStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="90"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="{Binding TestName}" FontSize="18" d:Text="Test name" Foreground="#22234A" Margin="20, 10"
+                   FontWeight="Bold" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Border Height="1" Width="600" Background="#DD006A" Grid.Row="0" VerticalAlignment="Bottom"/>
+
+        <!--<StackPanel Grid.Row="1" Grid.Column="0">
+            <TextBlock Text="{Binding QuestionText}" Margin="10"/>
+            <TextBox Text="{Binding UserAnswerText}" Width="200" Height="20"/>
+        </StackPanel>-->
+
+        <ListView  ItemsSource="{Binding QuestionsCollection}" Grid.Row="1"
+                   d:ItemsSource="{d:SampleData ItemCount=5}" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <!--<Border Height="auto" >
+                        <ContentControl Content="{Binding }"/>
+                    </Border>-->
+                    <StackPanel Margin="20, 10">
+                        <TextBlock  Margin="0, 5" FontWeight="SemiBold" FontSize="14">
+                            <Run Text="Question "/>
+                            <Run Text="{Binding QuestionNumber}" d:Text="1"/>
+                            <Run Text=":"/>
+                        </TextBlock>
+                        <TextBlock Text="{Binding QuestionText}" FontSize="14" d:Text="What is the name?" Margin="0, 4" FontWeight="Light" Width="400" HorizontalAlignment="Left"/>
+                        <Border CornerRadius="10" BorderBrush="#FDBBD7" BorderThickness="1" Height="30" Name="TbBorder" Width="400" HorizontalAlignment="Left">
+                            <TextBox FontSize="14" Text="{Binding Answer, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" FontWeight="Light" Background="Transparent"
+                                     Margin="2" BorderBrush="Transparent" TextChanged="TextBox_TextChanged" Name="AnswerText"/>
+
+                        </Border>
+                    </StackPanel>
+                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+            <Button Content="Finish" Background="white" BorderBrush="#DD006A"
+                    Foreground="#DD006A" Command="{Binding FinishTestCommand}" Width="100" Height="40"
+                    Grid.Row="2" VerticalAlignment="Center">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</UserControl>

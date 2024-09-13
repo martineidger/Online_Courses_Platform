@@ -1,0 +1,152 @@
+﻿<UserControl x:Class="OnlineCoursesPlatform.Views.CustomFields.MyCoursesField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OnlineCoursesPlatform.Views.CustomFields"
+             xmlns:fa="http://schemas.fontawesome.com/icons/"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:conv="clr-namespace:OnlineCoursesPlatform.Infrastructure.Converters"
+             mc:Ignorable="d" 
+             xmlns:vm="clr-namespace:OnlineCoursesPlatform.ViewModels"
+             Width="620">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Styles\MainStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <conv:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid  Margin="30, 10" Height="650">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="My courses" FontSize="26" Margin="0, 0, 0, 10" Background="Transparent" FontWeight="Bold" Foreground="#22234A" Grid.Column="0"/>
+                    <!--<StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
+                        <Border CornerRadius="10" BorderThickness="0.3" BorderBrush="#78C6FF" Height="30" Visibility="{Binding IsSearchVisible, Converter={StaticResource BooleanToVisibilityConverter}}">
+                            <TextBox Margin="5" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"  Width="220" Height="20" Background="Transparent" BorderThickness="0"/>
+                        </Border>
+                        <Button Background="Transparent" BorderThickness="0" Margin="5" Height="20" Command="{Binding SetVisibleSearchCommand}">
+                            <fa:ImageAwesome Icon="Solid_Search" Width="20" Foreground="#22234A"/>
+                        </Button>
+                    </StackPanel>-->
+                </Grid>
+                <!--<Label Content="My courses" FontSize="26" Margin="0, 0, 0, 10" Background="Transparent" FontWeight="Bold" Foreground="#22234A"/>-->
+                <!--<StackPanel Orientation="Horizontal">
+                    <Label Content="Sort by:" FontWeight="Light" FontSize="14"/>
+
+                    <Grid>
+                        <ComboBox Style="{DynamicResource RoundedComboBox}" Name="CategoryCombo" SelectionChanged="CategoryCombo_SelectionChanged" 
+Width="140" BorderThickness="1" Margin="10, 0"
+ItemsSource="{Binding CategorySearchList}" ItemContainerStyle="{StaticResource ComboBoxAsCheckboxItemStyle}" SelectedItem="{Binding CategorySelectedItem}">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="SelectionChanged">
+                                    <i:InvokeCommandAction Command="{Binding CategorySelChCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </ComboBox>
+                        <TextBlock x:Name="CategoryComboText" Text="Category" HorizontalAlignment="Left" Width="55" Margin="15,0" VerticalAlignment="Center" FontSize="14" Foreground="#8BABC1" FontWeight="Light"/>
+                    </Grid>
+
+
+                    <Grid>
+                        <ComboBox Style="{DynamicResource RoundedComboBox}" Name="NameCombo" SelectionChanged="NameCombo_SelectionChanged"
+  Width="140" BorderBrush="#C3E6FF" 
+ Background="#F3FAFF" BorderThickness="1" Margin="10, 0"
+ ItemsSource="{Binding NameSearchList}" SelectedItem="{Binding NameSelectedItem}">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="SelectionChanged">
+                                    <i:InvokeCommandAction Command="{Binding NameSelChCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </ComboBox>
+                        <TextBlock x:Name="NameComboText" Text="Name" HorizontalAlignment="Left" Width="40" Margin="15,0" VerticalAlignment="Center" FontSize="14" Foreground="#8BABC1" FontWeight="Light"/>
+                    </Grid>
+
+                    <Grid>
+                        <ComboBox Style="{DynamicResource RoundedComboBox}" Name="DifficultyCombo" SelectionChanged="DifficultyCombo_SelectionChanged"
+Width="142" BorderBrush="#C3E6FF" Background="#F3FAFF" 
+BorderThickness="1" Margin="10, 0" ItemsSource="{Binding NameSearchList}" SelectedItem="{Binding ComplexitySelectedItem}">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="SelectionChanged">
+                                    <i:InvokeCommandAction Command="{Binding ComplexitySelChCommand}" />
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </ComboBox>
+                        <TextBlock x:Name="DifficultyComboText" Text="Difficulty" HorizontalAlignment="Left" Width="50" Margin="15,0" VerticalAlignment="Center" FontSize="14" Foreground="#8BABC1" FontWeight="Light"/>
+
+                    </Grid>
+
+
+                </StackPanel>-->
+            </StackPanel>
+            <ListView VirtualizingPanel.ScrollUnit="Pixel" Grid.Row="1" Name="CatalogListView" ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                      ScrollViewer.VerticalScrollBarVisibility="Hidden"  HorizontalContentAlignment="Center" BorderBrush="Transparent"
+                      ItemsSource="{Binding CoursesCatalogDT}" d:ItemsSource="{d:SampleData ItemCount=5}" IsEnabled="True" Margin="0,0,0,10">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="1" CornerRadius="20" Width="530" Background="#F3FAFF" Height="150" Margin="0, 30,0,5"  BorderBrush="Transparent">
+                            <Grid Margin="0, 25, 0, 5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Image d:Source="D:\coursWPF\OnlineCoursesPlatform\OnlineCoursesPlatform\Resourses\icons8-медиа-запросы-64.png"
+                       Source="{Binding LogoPath}"
+                       Width="100" Height="100" Margin="5"
+                       Grid.Column="0"/>
+                                <StackPanel Margin="5" Grid.Column="1">
+                                    <StackPanel Orientation="Horizontal" >
+                                        <TextBlock>
+                            <Run  Text="{Binding Name}" FontSize="18" Foreground="#22234A" FontWeight="DemiBold"/>
+                            <Run Text="   / " FontWeight="Bold" FontSize="18" Foreground="#22234A"/>
+                            <Run Text="{Binding Category.Name}" FontSize="14" FontWeight="Light" Foreground="#595976"/>
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <TextBlock Text="{Binding Description}"
+                               Height="55" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" FontSize="12"
+                               FontWeight="Light" Foreground="#595976" Margin="0, 8"/>
+                                    <TextBlock>
+                        <Run Text="★" Foreground="Gold"/>
+                        <Run Text="{Binding Rating}" d:Text="4.5" Foreground="#22234A"/>
+                                    </TextBlock>
+                                </StackPanel>
+                                <!--<TextBlock Text="{Binding Category}" FontSize="16" Foreground="#595976" Grid.Column="2"
+                           VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0, 5, 15, 0"/>-->
+                                <Button Width="40" Height="40" 
+                        BorderBrush="Transparent" Background="#22234A" 
+                        Command="{Binding Path=DataContext.Navigate, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                        CommandParameter="{Binding}"
+                        Grid.Column="2" Margin="10" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                                    <Button.Content>
+                                        <fa:ImageAwesome Icon="Solid_AngleRight" Width="8"  Foreground="White" />
+                                    </Button.Content>
+                                    <Button.Resources>
+                                        <Style TargetType="Border">
+                                            <Setter Property="CornerRadius" Value="20"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+                                <TextBlock Text="{Binding Complexity}" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0, 0, 20, 0" Background="Transparent" d:Text="easy" Foreground="#FF3F9B" Opacity="0.4"/>
+                            </Grid>
+                        </Border>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+    </Grid>
+</UserControl>

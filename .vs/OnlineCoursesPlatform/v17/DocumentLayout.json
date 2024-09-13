@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\coursWPF\\OnlineCoursesPlatform\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\viewmodels\\editcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\viewmodels\\editcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\viewmodels\\coursestepvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\viewmodels\\coursestepvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\viewmodels\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\viewmodels\\selectedcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\viewmodels\\selectedcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\viewmodels\\addcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\viewmodels\\addcoursevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\styles\\mainstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\styles\\mainstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\views\\customfields\\selectedcoursefield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\views\\customfields\\selectedcoursefield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\views\\customfields\\editcoursefield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\views\\customfields\\editcoursefield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\views\\customfields\\addcoursefield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\views\\customfields\\addcoursefield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\views\\customfields\\mycoursesfield.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\views\\customfields\\mycoursesfield.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\views\\customfields\\mycoursesfield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\views\\customfields\\mycoursesfield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\viewmodels\\mycoursesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\viewmodels\\mycoursesvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\views\\customfields\\loginfield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\views\\customfields\\loginfield.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\viewmodels\\archivevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\viewmodels\\archivevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|d:\\courswpf\\onlinecoursesplatform\\onlinecoursesplatform\\models\\courseprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C71CD494-90A8-4A72-8A02-3DA2074EAC78}|OnlineCoursesPlatform\\OnlineCoursesPlatform.csproj|solutionrelative:onlinecoursesplatform\\models\\courseprogress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 442,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditCourseVM.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\EditCourseVM.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\ViewModels\\EditCourseVM.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\EditCourseVM.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\ViewModels\\EditCourseVM.cs",
+              "ViewState": "AQIAAGUBAAAAAAAAAAA7wH8BAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T08:26:23.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddCourseVM.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\AddCourseVM.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\ViewModels\\AddCourseVM.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\AddCourseVM.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\ViewModels\\AddCourseVM.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAiwG8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T00:32:39.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SelectedCourseVM.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\SelectedCourseVM.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\ViewModels\\SelectedCourseVM.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\SelectedCourseVM.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\ViewModels\\SelectedCourseVM.cs",
+              "ViewState": "AQIAAMwAAAAAAAAAAAAqwOkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T00:24:26.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SelectedCourseField.xaml",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\SelectedCourseField.xaml",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\Views\\CustomFields\\SelectedCourseField.xaml",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\SelectedCourseField.xaml",
+              "RelativeToolTip": "OnlineCoursesPlatform\\Views\\CustomFields\\SelectedCourseField.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T23:59:12.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseStepVM.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\CourseStepVM.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\ViewModels\\CourseStepVM.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\CourseStepVM.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\ViewModels\\CourseStepVM.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAewIQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T00:32:39.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindowVM.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\MainWindowVM.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\ViewModels\\MainWindowVM.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\MainWindowVM.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\ViewModels\\MainWindowVM.cs",
+              "ViewState": "AQIAALgAAAAAAAAAAAAMwMUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T01:36:40.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainStyles.xaml",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Styles\\MainStyles.xaml",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\Styles\\MainStyles.xaml",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Styles\\MainStyles.xaml",
+              "RelativeToolTip": "OnlineCoursesPlatform\\Styles\\MainStyles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T06:44:22.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditCourseField.xaml",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\EditCourseField.xaml",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\Views\\CustomFields\\EditCourseField.xaml",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\EditCourseField.xaml",
+              "RelativeToolTip": "OnlineCoursesPlatform\\Views\\CustomFields\\EditCourseField.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T00:51:57.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddCourseField.xaml",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\AddCourseField.xaml",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\Views\\CustomFields\\AddCourseField.xaml",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\AddCourseField.xaml",
+              "RelativeToolTip": "OnlineCoursesPlatform\\Views\\CustomFields\\AddCourseField.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-16T12:51:25.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MyCoursesField.xaml.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\MyCoursesField.xaml.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\Views\\CustomFields\\MyCoursesField.xaml.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\MyCoursesField.xaml.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\Views\\CustomFields\\MyCoursesField.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAArwBoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T02:54:58.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MyCoursesField.xaml",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\MyCoursesField.xaml",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\Views\\CustomFields\\MyCoursesField.xaml",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\MyCoursesField.xaml",
+              "RelativeToolTip": "OnlineCoursesPlatform\\Views\\CustomFields\\MyCoursesField.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T02:18:01.656Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginField.xaml",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\LoginField.xaml",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\Views\\CustomFields\\LoginField.xaml",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Views\\CustomFields\\LoginField.xaml",
+              "RelativeToolTip": "OnlineCoursesPlatform\\Views\\CustomFields\\LoginField.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T02:12:32.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\LoginVM.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\ViewModels\\LoginVM.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\LoginVM.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\ViewModels\\LoginVM.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAswH8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T00:32:39.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CourseProgress.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Models\\CourseProgress.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\Models\\CourseProgress.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\Models\\CourseProgress.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\Models\\CourseProgress.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T01:34:17.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MyCoursesVM.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\MyCoursesVM.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\ViewModels\\MyCoursesVM.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\MyCoursesVM.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\ViewModels\\MyCoursesVM.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAA3wGkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T00:25:28.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ArchiveVM.cs",
+              "DocumentMoniker": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\ArchiveVM.cs",
+              "RelativeDocumentMoniker": "OnlineCoursesPlatform\\ViewModels\\ArchiveVM.cs",
+              "ToolTip": "D:\\coursWPF\\OnlineCoursesPlatform\\OnlineCoursesPlatform\\ViewModels\\ArchiveVM.cs",
+              "RelativeToolTip": "OnlineCoursesPlatform\\ViewModels\\ArchiveVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T00:32:39.278Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

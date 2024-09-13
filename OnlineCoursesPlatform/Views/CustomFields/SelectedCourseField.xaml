@@ -1,0 +1,269 @@
+﻿<UserControl x:Class="OnlineCoursesPlatform.Views.CustomFields.SelectedCourseField"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OnlineCoursesPlatform.Views.CustomFields"
+             mc:Ignorable="d" 
+             xmlns:fa="http://schemas.fontawesome.com/icons/"
+             xmlns:vm="clr-namespace:OnlineCoursesPlatform.ViewModels" xmlns:conv="clr-namespace:OnlineCoursesPlatform.Infrastructure.Converters"
+             Width="620" d:Background="White" d:Height="1000" Height="650">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="\Styles\MainStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <conv:AccessToVisibilityConverter x:Key="AccessToVisibilityConverter" />
+            <conv:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <ScrollViewer VerticalScrollBarVisibility="Hidden">
+    <Grid Margin="30, 10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Height="auto" Name="Header">
+            <Button Command="{Binding ToAllCoursesCommand}" CommandParameter="AllCourses"  Height="20" Width="20" VerticalAlignment="Center" HorizontalAlignment="Left"   Background="Transparent" BorderThickness="0">
+                <Button.Content>
+                    <fa:ImageAwesome Icon="Solid_AngleLeft" Width="10"  Foreground="#22234A"/>
+                </Button.Content>
+            </Button>
+            <Label Content="{Binding Text}" VerticalAlignment="Center" FontSize="21"  Margin="10, 0, 0, 10" Background="Transparent" FontWeight="Normal" Foreground="#22234A"/>
+                <!--<Label Content="{Binding CurrentCourse.Rating}" Margin="20,0" />-->
+                <TextBlock Margin="460,0" VerticalAlignment="Center">
+                    <Run Text="★" Foreground="gold" FontSize="18"/>
+                    <Run Text="{Binding CurrentCourse.Rating}" d:Text="4.5" FontSize="16"/>
+                </TextBlock>
+        </StackPanel>
+        <StackPanel x:Name="Preview"  Grid.Row="1" Margin="0, 10, 0, 2" >
+                <Image Source="{Binding CurrentCourse.PreviewPath}" d:Source="D:\coursWPF\OnlineCoursesPlatform\OnlineCoursesPlatform\Resourses\previewEx.jpg" 
+                       Width="560" Height="300" Stretch="Fill" HorizontalAlignment="Left"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" Name="Author" Margin="0, 10, 0, 2" Grid.Column="0">
+                        <fa:ImageAwesome Icon="Solid_UserCircle" Width="35"  Foreground="#22234A"/>
+                        <StackPanel Name="AuthorName" Margin="10, 0">
+                            <TextBlock d:Text="John J.Stewart" Text="{Binding CourseAuthor}" Foreground="#22234A" Height="auto" FontSize="15"/>
+                            <TextBlock Text="Administrator" Foreground="#22234A" FontWeight="Light" FontSize="10"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Grid.Column="1"  HorizontalAlignment="Right">
+                        <ToggleButton Style="{StaticResource CustomToggleButtonStyle}" IsChecked="{Binding IsAddedTBChecked, Mode=TwoWay}"
+                      Command="{Binding AddToMyCoursesCommand}"
+                      CommandParameter="{Binding IsAddedTBChecked}"/>
+                        <Button Content="Edit" Visibility="{Binding CurUser, Converter={StaticResource AccessToVisibilityConverter}}" Command="{Binding Navigate}" CommandParameter="Edit" 
+                                Width="100" Margin="10, 10, 0, 10" FontSize="16" 
+                                Foreground="#FF6CAA" Background="white" BorderBrush="#FF6CAA">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <Button Content="{Binding ButtonText}" Command="{Binding Navigate}" CommandParameter="{Binding ButtonText}" Width="100" Margin="10, 10, 0, 10" FontSize="16" Foreground="White" Background="#FF6CAA" BorderBrush="#FF6CAA">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
+                    
+                </Grid>
+            
+        </StackPanel>
+            
+        <TabControl Background="Transparent" Grid.Row="2" BorderBrush="Transparent" Margin="0, 25">
+                <TabItem Background="Transparent" FontSize="15" Header="About course" FontWeight="Light" Width="120">
+                    <StackPanel x:Name="Description" Margin="0, 25">
+                        <StackPanel Orientation="Horizontal">
+                            <Border CornerRadius="10" Width="100" Height="30" Background="Transparent" Margin="0, 0, 10, 0"
+        HorizontalAlignment="Left" BorderBrush="#FF6CAA" BorderThickness="2">
+                                <TextBlock Foreground="#FF6CAA" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Run Text="{Binding StepsCount}" d:Text="4"/>
+        <Run Text="steps"/>
+                                </TextBlock>
+                            </Border>
+
+                            <Border CornerRadius="10" Width="180" Height="30" Background="Transparent" Margin="0, 0, 10, 0"
+        HorizontalAlignment="Left" BorderBrush="#5ea7ff" BorderThickness="2">
+                                <TextBlock Foreground="#5ea7ff" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Run Text="{Binding DateText}" d:Text="4"/>
+                                </TextBlock>
+                            </Border>
+                        </StackPanel>
+                        
+                        <!--<TextBlock Text="About course" Foreground="#22234A" FontSize="14" FontWeight="Medium"/>-->
+                        <TextBlock Text="{Binding CurrentCourse.Description}" Foreground="#22234A" FontSize="12" d:Text="   The path ahead was winding and mysterious, adorned with vibrant wildflowers that painted the landscape in a kaleidoscope of colors. The air was filled with the sweet scent of blooming jasmine, and the melodies of birds created a symphony that echoed through the woods.\n
+               As the adventurer delved deeper into the forest, they encountered mystical creatures that seemed to have sprung from the pages of a fairytale. A mischievous fox with emerald eyes darted through the foliage, leading the way with a playful flick of its tail. Butterflies danced around them, their wings shimmering like delicate works of art. As the adventurer delved deeper into the forest, they encountered mystical creatures that seemed to have sprung from the pages"
+               FontWeight="Normal" Height="100" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" Margin="0, 5"/>
+                        <!--<Button Content="{Binding ButtonText}" Command="{Binding Navigate}" CommandParameter="Steps"/>-->
+                        <Button Content="Delete course" Command="{Binding DeleteCourseCommand}" 
+                                Visibility="{Binding CurUser, Converter={StaticResource AccessToVisibilityConverter}}" 
+                                Margin="5,30, 5, 10" Background="white" BorderBrush="DarkRed" Foreground="Red" FontWeight="Medium">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="7"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
+                </TabItem>
+                <TabItem Background="Transparent" Header="Commentaries" FontSize="15" FontWeight="Light" Padding="10, 0" Width="120">
+                    <Grid Margin="0, 10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0" Margin="2, 25">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal">
+                                <ToggleButton  Style="{StaticResource StarToggleButtonStyle}" IsChecked="{Binding IsStarChecked[0]}" Command="{Binding StarCommand}" CommandParameter="1" Background="Transparent" />
+                                <ToggleButton  Style="{StaticResource StarToggleButtonStyle}" IsChecked="{Binding IsStarChecked[1]}" Command="{Binding StarCommand}" CommandParameter="2" Background="Transparent" />
+                                <ToggleButton  Style="{StaticResource StarToggleButtonStyle}" IsChecked="{Binding IsStarChecked[2]}" Command="{Binding StarCommand}" CommandParameter="3" Background="Transparent" />
+                                <ToggleButton  Style="{StaticResource StarToggleButtonStyle}" IsChecked="{Binding IsStarChecked[3]}" Command="{Binding StarCommand}" CommandParameter="4" Background="Transparent" />
+                                <ToggleButton  Style="{StaticResource StarToggleButtonStyle}" IsChecked="{Binding IsStarChecked[4]}" Command="{Binding StarCommand}" CommandParameter="5" Background="Transparent" />
+
+                            </StackPanel>
+                            <Border CornerRadius="10" BorderThickness="1" BorderBrush="#22234A" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="0">
+                                <TextBox Text="{Binding CommentText}" Height="50" Width="380" Foreground="#22234A" Margin="5" BorderThickness="0"/>
+                            </Border>
+                            <Button Content="Add" Width="100" Height="40" HorizontalAlignment="Left" Margin="0, 5" Foreground="White" Grid.Row="1" Grid.Column="1"
+                Background="#22234A" FontWeight="Normal" BorderBrush="Transparent" FontSize="15" Command="{Binding AddCommentCommand}">
+                                <Button.Resources>
+                                    <Style TargetType="Border">
+                                        <Setter Property="CornerRadius" Value="10"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                            <StackPanel Orientation="Horizontal" Margin="0, 10, 0, 5" Height="40"  Grid.Row="2"
+            Visibility="{Binding Path=DataContext.IsReplying, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                <TextBox Text="{Binding Path=DataContext.ReplyText, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                         Width="275" Height="30" Background="Transparent" BorderBrush="#22234A"/>
+                                <Button Content="Send reply" 
+                                        Command="{Binding Path=DataContext.AddReplyTextCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                        Width="100" Height="30" Margin="10, 0" Background="White" FontWeight="Medium" Foreground="#22234A" BorderBrush="#22234A">
+                                    <Button.Resources>
+                                        <Style TargetType="Border">
+                                            <Setter Property="CornerRadius" Value="10"/>
+                                        </Style>
+                                    </Button.Resources>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+
+                        <ListView Grid.Row="1" VirtualizingPanel.ScrollUnit="Pixel" Name="CommentsListView" ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+      ScrollViewer.VerticalScrollBarVisibility="Hidden"  HorizontalContentAlignment="Left" BorderBrush="Transparent"
+      ItemsSource="{Binding Comments}" d:ItemsSource="{d:SampleData ItemCount=5}">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Margin="0, 5" BorderThickness="0, 0, 0, 1" BorderBrush="#FF4A4B70">
+                                        <StackPanel>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="100"/>
+                                                </Grid.ColumnDefinitions>
+                                               
+                                                <StackPanel Orientation="Horizontal" Margin="0, 5" Grid.Column="0" >
+                                                    <fa:ImageAwesome Icon="Solid_UserCircle" Width="35"  Foreground="#22234A" Opacity="0.5"/>
+                                                    <StackPanel Name="AuthorName" Margin="10, 0">
+                                                        <TextBlock d:Text="Maria Feducci" FontWeight="Medium" FontSize="16" Text="{Binding User.UserName}" Foreground="#22234A" Height="auto" />
+                                                        <TextBlock Foreground="#22234A" FontWeight="Light" FontSize="12">
+                                                            <Run d:Text="jr. front-end" Text="{Binding User.Status}"/>
+                                                            <Run Text=" | "/>
+                                                            <Run d:Text="EPAM" Text="{Binding User.Organisation}"/>
+                                                            <!--<Run Text="User"/>-->
+                                                        </TextBlock>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                                <Button Content="Reply" Command="{Binding Path=DataContext.AddAnswerToComment, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                        VerticalAlignment="Top" Width="100" Height="20" 
+                                                        Background="Transparent" BorderThickness="0" 
+                                                        Foreground="#22234A" Grid.Column="1"
+                                                        Visibility="{Binding Path=DataContext.CurUser, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource AccessToVisibilityConverter}}"
+                                                        CommandParameter="{Binding}"/>
+                                                
+                                            </Grid>
+                                            
+                                            <TextBlock Height="60" d:Text="With each step, the adventurer discovered not only the beauty of the world around them but also the 
+                                   depths of their own courage and resilience. They realized that life's true treasures lie not in material"
+                                   TextWrapping="Wrap" Margin="0, 3" Text="{Binding CommentText}"/>
+                                            <!--<StackPanel Orientation="Horizontal" Margin="5" Height="40" Visibility="{Binding Path=DataContext.IsReplying, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                                <TextBox Text="{Binding Path=DataContext.ReplyText, RelativeSource={RelativeSource AncestorType=UserControl}}" Width="200" Height="30" Background="Transparent" />
+                                                <Button Content="Send reply" Command="{Binding Path=DataContext.AddReplyTextCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" Width="100" Height="30" Margin="10, 0">
+                                                    <Button.Resources>
+                                                        <Style TargetType="Border">
+                                                            <Setter Property="CornerRadius" Value="10"/>
+                                                        </Style>
+                                                    </Button.Resources>
+                                                </Button>
+                                            </StackPanel>-->
+                                            <ListView ItemsSource="{Binding Replies}" Grid.Row="1"
+                                                      Visibility="{Binding Path=DataContext.CurUser, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource AccessToVisibilityConverter}}">
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Margin="20, 0">
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition/>
+                                                                <RowDefinition/>
+                                                            </Grid.RowDefinitions>
+                                                            <StackPanel Orientation="Horizontal" Margin="0, 5" Grid.Row="0" >
+                                                                <fa:ImageAwesome Icon="Solid_UserCircle" Width="35"  Foreground="#22234A" Opacity="0.5"/>
+                                                                <StackPanel Name="AuthorName" Margin="10, 0">
+                                                                    <TextBlock d:Text="Marta" FontWeight="Medium" FontSize="16" Text="{Binding User.UserName}" Foreground="#22234A" Height="auto" />
+                                                                    <TextBlock Foreground="#22234A" FontWeight="Light" FontSize="12">
+                                                                            <Run Text="Author"/>
+                                                                    </TextBlock>
+                                                                </StackPanel>
+                                                            </StackPanel>
+                                                            <TextBlock Text="{Binding CommentText}" Height="50" Grid.Row="1"/>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Subscribers" FontSize="15" FontWeight="Light" Padding="10, 0" Width="120" Visibility="{Binding CurUser, Converter={StaticResource AccessToVisibilityConverter}}">
+                    <ListView ItemsSource="{Binding SubscribersList}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Name="Author" Margin="3, 6">
+                                    <fa:ImageAwesome Icon="Solid_UserCircle" Width="35"  Foreground="#FF4D8DF3"/>
+                                    <StackPanel Name="AuthorName" Margin="10, 0" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding UserName}" Foreground="#22234A" Height="auto" FontSize="15"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </TabItem>
+        </TabControl>
+        
+        
+    </Grid>
+    </ScrollViewer>
+</UserControl>

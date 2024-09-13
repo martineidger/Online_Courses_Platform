@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\CustomFields\AddCourseField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\ArchiveField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\CoursesCatalogField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\CourseStepField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\EditCourseField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\FinalTestField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\FinishCourseField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\LoginField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\MyCoursesField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\SelectedCourseField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\SettingsField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\LoginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Pages\MainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\RegistrationField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CustomFields\ShowTestScoreField.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\CreateTestForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\ReplyWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Windows\SelectDateWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\CustomFields\AddCourseField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\ArchiveField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\CoursesCatalogField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\CourseStepField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\EditCourseField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\FinalTestField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\FinishCourseField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\LoginField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\MyCoursesField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\SelectedCourseField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\SettingsField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\MainStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\RegistrationField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CustomFields\ShowTestScoreField.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\CreateTestForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\ReplyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Windows\SelectDateWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

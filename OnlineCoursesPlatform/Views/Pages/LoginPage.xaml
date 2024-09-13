@@ -1,0 +1,33 @@
+﻿<Page x:Class="OnlineCoursesPlatform.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OnlineCoursesPlatform"
+      xmlns:fa="http://schemas.fontawesome.com/icons/"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage">
+
+    <Border CornerRadius="10">
+        <Border.Background>
+            <ImageBrush ImageSource="D:\coursWPF\OnlineCoursesPlatform\OnlineCoursesPlatform\Resourses\fon2.jpg"
+            Stretch="UniformToFill"
+            AlignmentX="Center"
+            AlignmentY="Center" 
+            Opacity="0.6"/>
+        </Border.Background>
+        <Grid>
+            <ContentControl x:Name="LoginRegistrationFields" Content="{Binding Content}"/>
+            <fa:ImageAwesome Icon="Solid_Times" Foreground="#FF7E5AD1" Width="15" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="9" Cursor="Hand">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="PreviewMouseDown">
+                        <i:InvokeCommandAction Command="{Binding CloseAppCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </fa:ImageAwesome>
+        </Grid>
+
+    </Border>
+</Page>
